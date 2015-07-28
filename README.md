@@ -2,7 +2,7 @@
 
 ## The low down
 
-PrettyNames.Js
+PrettyNames.Js is able to be used isomorphically using either window global, CommonJS, or AMD module system.
 
 ## How to install
 
@@ -65,6 +65,11 @@ likewise, if building a csv then you would write:
 console.log ( prettyNames(obj).join(',') );
 
 
+```
+and it would return a comma delimited string like:
+
+```
+'Some variable name,Some other object name,Some enumerable thing,Some func name'
 ```
 
 ## Authors
