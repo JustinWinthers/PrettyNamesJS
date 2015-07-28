@@ -2,7 +2,7 @@
   "name": "prettynames"
 , "email": "justin@digitaladvisors.io"
 , "description": "Convert any named object to a pretty string representation"
-, "version": "1.0.1"
+, "version": "1.0.2"
 , "keywords": ["pretty names", "variable names", "variables", "naming","object names"]
 , "main": "PrettyNames.js"
 , "homepage": "https://github.com/JustinWinthers/PrettyNamesJS"

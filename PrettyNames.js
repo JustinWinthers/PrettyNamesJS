@@ -28,33 +28,62 @@
         this.PrettyNames = PrettyNames;
     }
 
+    // accept configuration object.  It's not really being used yet.
+    // todo: add additional configuration options
+
     function PrettyNames(config){
 
 
-        function fromCamelCase (name){
+        function fromCamelCase(name) {
 
-            var result = [], firstTime=true;
 
-            name = name.replace(/[^a-zA-Z0-9]/g,'');
+            if (typeof name === 'object'){
 
-            Array.prototype.forEach.call(name, function(char){
+                var names = Object.keys(name);
 
-                if (firstTime) {
+                var i=0;
 
-                    result.push(char[0].toUpperCase());
-                    firstTime = !firstTime;
+                for (;i<names.length;i++){
 
-                } else {
+                    names[i] = convertName(names[i]);
 
-                    if (char === char.toUpperCase()) result.push(' ');
-                    result.push(char.toLowerCase());
                 }
 
-            });
+                return names;
 
-            return result.join("");
+            } else {
 
-        }
+                return convertName(name)
+
+            }
+
+            function convertName(name) {
+
+                var result = [], firstTime = true;
+
+                name = name.replace(/[^a-zA-Z0-9]/g, '');
+
+                Array.prototype.forEach.call(name, function (char) {
+
+                    if (firstTime) {
+
+                        result.push(char[0].toUpperCase());
+                        firstTime = !firstTime;
+
+                    } else {
+
+                        if (char === char.toUpperCase()) result.push(' ');
+                        result.push(char.toLowerCase());
+                    }
+
+                });
+
+                return result.join("");
+
+            }
+
+        };
+
 
         if (config.camelCase) {
             return fromCamelCase;
