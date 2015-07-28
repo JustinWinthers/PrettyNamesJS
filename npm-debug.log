@@ -1,0 +1,108 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'node', '/usr/local/bin/npm', 'publish' ]
+2 info using npm@1.4.28
+3 info using node@v0.10.38
+4 verbose publish [ '.' ]
+5 verbose cache add [ '.', null ]
+6 verbose cache add name=undefined spec="." args=[".",null]
+7 verbose parsed url { protocol: null,
+7 verbose parsed url   slashes: null,
+7 verbose parsed url   auth: null,
+7 verbose parsed url   host: null,
+7 verbose parsed url   port: null,
+7 verbose parsed url   hostname: null,
+7 verbose parsed url   hash: null,
+7 verbose parsed url   search: null,
+7 verbose parsed url   query: null,
+7 verbose parsed url   pathname: '.',
+7 verbose parsed url   path: '.',
+7 verbose parsed url   href: '.' }
+8 silly lockFile 3a52ce78- .
+9 verbose lock . /Users/jew1/.npm/3a52ce78-.lock
+10 verbose tar pack [ '/Users/jew1/.npm/PrettyNames/1.0.1/package.tgz', '.' ]
+11 verbose tarball /Users/jew1/.npm/PrettyNames/1.0.1/package.tgz
+12 verbose folder .
+13 info prepublish PrettyNames@1.0.1
+14 silly lockFile 1f1177db-tar tar://.
+15 verbose lock tar://. /Users/jew1/.npm/1f1177db-tar.lock
+16 silly lockFile bef68105-pm-PrettyNames-1-0-1-package-tgz tar:///Users/jew1/.npm/PrettyNames/1.0.1/package.tgz
+17 verbose lock tar:///Users/jew1/.npm/PrettyNames/1.0.1/package.tgz /Users/jew1/.npm/bef68105-pm-PrettyNames-1-0-1-package-tgz.lock
+18 silly lockFile 1f1177db-tar tar://.
+19 silly lockFile 1f1177db-tar tar://.
+20 silly lockFile bef68105-pm-PrettyNames-1-0-1-package-tgz tar:///Users/jew1/.npm/PrettyNames/1.0.1/package.tgz
+21 silly lockFile bef68105-pm-PrettyNames-1-0-1-package-tgz tar:///Users/jew1/.npm/PrettyNames/1.0.1/package.tgz
+22 silly lockFile f64efb4b-w1-npm-PrettyNames-1-0-1-package /Users/jew1/.npm/PrettyNames/1.0.1/package
+23 verbose lock /Users/jew1/.npm/PrettyNames/1.0.1/package /Users/jew1/.npm/f64efb4b-w1-npm-PrettyNames-1-0-1-package.lock
+24 silly lockFile f64efb4b-w1-npm-PrettyNames-1-0-1-package /Users/jew1/.npm/PrettyNames/1.0.1/package
+25 silly lockFile f64efb4b-w1-npm-PrettyNames-1-0-1-package /Users/jew1/.npm/PrettyNames/1.0.1/package
+26 silly lockFile 3a52ce78- .
+27 silly lockFile 3a52ce78- .
+28 silly publish { name: 'PrettyNames',
+28 silly publish   email: 'justin@digitaladvisors.io',
+28 silly publish   description: 'Convert any named object to a pretty string representation',
+28 silly publish   version: '1.0.1',
+28 silly publish   keywords:
+28 silly publish    [ 'pretty names',
+28 silly publish      'variable names',
+28 silly publish      'variables',
+28 silly publish      'naming',
+28 silly publish      'object names' ],
+28 silly publish   main: 'PrettyNames.js',
+28 silly publish   homepage: 'https://github.com/JustinWinthers/PrettyNamesJS',
+28 silly publish   author: { name: 'Justin Winthers - Digital Advisors, LLC' },
+28 silly publish   repository:
+28 silly publish    { type: 'git',
+28 silly publish      url: 'https://github.com/JustinWinthers/PrettyNamesJS.git' },
+28 silly publish   licenses:
+28 silly publish    [ { type: 'Apache-2.0',
+28 silly publish        url: 'http://www.apache.org/licenses/LICENSE-2.0' } ],
+28 silly publish   readme: '## PrettyNamesJS - Convert object variable names to a readable format for reporting/UI presentation.\n\n## The low down\n\nPrettyNames.Js\n\n## How to install\n\nIt\'s simple:\n\n\n```\nnpm install PrettyNames\n```\n\n### How do I use it?\n\n```js\n\n var prettyNames = require(\'PrettyNames\')({camelCase:true});\n\n console.log (prettyNames(\'convertCamelCaseStringToAPrettyName\'));\n\n console.log (prettyNames(\'convertCamel_CaseString!!ToA*PrettyName\'));\n\n```\n\nBoth of the above will produce the same results as special characters are removed:\n\n```\n Convert camel case string to a pretty name\n```\n\n## Authors\n\n**Justin Winthers**\n\n+ https://github.com/JustinWinthers\n\n\n## License\n\nCopyright 2014 Digital Advisors, LLC\n\nLicensed under the Apache License, Version 2.0: http://www.apache.org/licenses/LICENSE-2.0',
+28 silly publish   readmeFilename: 'README.md',
+28 silly publish   gitHead: '416b41106845d0128342e4bcc798155ceeb63bce',
+28 silly publish   bugs: { url: 'https://github.com/JustinWinthers/PrettyNamesJS/issues' },
+28 silly publish   _id: 'PrettyNames@1.0.1',
+28 silly publish   scripts: {},
+28 silly publish   _shasum: '2dd6f32eb9f17132ca77560c370bc70b466d6598',
+28 silly publish   _from: '.' }
+29 verbose request where is /PrettyNames
+30 verbose request registry http://registry.npmjs.org/
+31 verbose request id d572f26b66d6024f
+32 verbose url raw /PrettyNames
+33 verbose url resolving [ 'http://registry.npmjs.org/', './PrettyNames' ]
+34 verbose url resolved http://registry.npmjs.org/PrettyNames
+35 verbose request where is http://registry.npmjs.org/PrettyNames
+36 info trying registry request attempt 1 at 12:51:10
+37 http PUT http://registry.npmjs.org/PrettyNames
+38 http 400 http://registry.npmjs.org/PrettyNames
+39 verbose headers { 'content-type': 'application/json',
+39 verbose headers   'cache-control': 'max-age=60',
+39 verbose headers   'accept-ranges': 'bytes',
+39 verbose headers   date: 'Tue, 28 Jul 2015 16:51:11 GMT',
+39 verbose headers   via: '1.1 varnish, 1.1 wcg1.va.nreca.org',
+39 verbose headers   'x-served-by': 'cache-atl6220-ATL',
+39 verbose headers   'x-cache': 'MISS',
+39 verbose headers   'x-cache-hits': '0',
+39 verbose headers   'x-timer': 'S1438102270.902510,VS0,VE381',
+39 verbose headers   'content-length': '54',
+39 verbose headers   age: '1' }
+40 error publish Failed PUT 400
+41 error Error: name can no longer contain capital letters : PrettyNames
+41 error     at RegClient.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:308:14)
+41 error     at Request._callback (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:246:65)
+41 error     at Request.self.callback (/usr/local/lib/node_modules/npm/node_modules/request/request.js:236:22)
+41 error     at Request.emit (events.js:98:17)
+41 error     at Request.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/request.js:1142:14)
+41 error     at Request.emit (events.js:117:20)
+41 error     at IncomingMessage.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/request.js:1096:12)
+41 error     at IncomingMessage.emit (events.js:117:20)
+41 error     at _stream_readable.js:944:16
+41 error     at process._tickCallback (node.js:448:13)
+42 error If you need help, you may report this *entire* log,
+42 error including the npm and node versions, at:
+42 error     <http://github.com/npm/npm/issues>
+43 error System Darwin 14.4.0
+44 error command "node" "/usr/local/bin/npm" "publish"
+45 error cwd /Users/jew1/Desktop/web/PrettyNamesJS
+46 error node -v v0.10.38
+47 error npm -v 1.4.28
+48 verbose exit [ 1, true ]

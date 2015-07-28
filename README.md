@@ -10,7 +10,7 @@ It's simple:
 
 
 ```
-npm install PrettyNames
+npm install prettynames
 ```
 
 ### How do I use it?
