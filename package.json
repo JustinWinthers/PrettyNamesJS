@@ -1,0 +1,18 @@
+{
+  "name": "PrettyNames"
+, "email": "justin@digitaladvisors.io"
+, "description": "Convert any named object to a pretty string representation"
+, "version": "1.0.1"
+, "keywords": ["pretty names", "variable names", "variables", "naming","object names"]
+, "main": "PrettyNames.js"
+, "homepage": "https://github.com/JustinWinthers/PrettyNamesJS"
+, "author": "Justin Winthers - Digital Advisors, LLC"
+, "repository": {
+  "type": "git"
+, "url": "https://github.com/JustinWinthers/PrettyNamesJS.git"
+}
+, "licenses": [
+  { "type": "Apache-2.0"
+  , "url": "http://www.apache.org/licenses/LICENSE-2.0"
+  }]
+}
